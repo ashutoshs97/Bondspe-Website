@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Tabs Style */
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .tab {
+            cursor: pointer;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+        }
+
+        /* Profile Form Style */
+        .profile-form {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-form label {
+            font-weight: bold;
+        }
+
+        .profile-form input[type="text"],
+        .profile-form input[type="email"],
+        .profile-form input[type="date"],
+        .profile-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .profile-form button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!-- Tabs -->
+    <div class="tabs">
+        <div class="tab" onclick="openTab('profile')">My Profile</div>
+        <div class="tab" onclick="openTab('account')">Account Details</div>
+        <div class="tab" onclick="openTab('kyc')">KYC</div>
+        <div class="tab" onclick="openTab('portfolio')">Portfolio</div>
+        <div class="tab" onclick="openTab('orders')">My Orders</div>
+    </div>
+
+    <!-- Profile Form -->
+    <div id="profile" class="tab-content">
+        <form class="profile-form">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label for="pan">PAN Number:</label>
+            <input type="text" id="pan" name="pan" required><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br>
+
+            <label for="deemat">Demat Account Details:</label>
+            <select id="deemat" name="deemat">
+                <option value="nsdl">NSDL</option>
+                <option value="cdsl">CDSL</option>
+            </select><br>
+
+            <label for="clientId">Client ID:</label>
+            <input type="text" id="clientId" name="clientId" required><br>
+
+            <button type="button" onclick="window.location.href='/index.html' ;">Update</button>
+        </form>
+    </div>
+
+
+    <!-- Profile Form -->
+    <div id="account" class="tab-content">
+        <form class="profile-form">
+            <label for="beneficiaryname">Beneficiary Name</label>
+            <input type="text" id="beneficiaryname" name="beneficiaryname" required><br>
+
+            <label for="accountnumber">Account Number</label>
+            <input type="text" id="beneficiaryname" name="beneficiaryname" required><br>
+
+            <label for="accountnumber">Confirm Account Number</label>
+            <input type="text" id="beneficiaryname" name="beneficiaryname" required><br>
+
+            <label for="accountnumber">Bank Name</label>
+            <input type="text" id="beneficiaryname" name="beneficiaryname" required><br>
+
+            <label for="accountnumber">IFSC Code</label>
+            <input type="text" id="beneficiaryname" name="beneficiaryname" required><br>
+
+            <label for="accountnumber">UPI ID</label>
+            <input type="text" id="beneficiaryname" name="beneficiaryname" required><br>
+
+            <label for="Type">Account Type</label>
+            <select id="Type" name="Type">
+                <option value="Savings">Savings</option>
+                <option value="Current">Current</option>
+            </select><br>
+
+            <button type="button" onclick="window.location.href='/index.html' ;">Update</button>
+        </form>
+    </div>
+
+    <div id="kyc" class="tab-content">
+        <h2>KYC Documents</h2>
+        <form id="profile-form">
+            <div class="input-group">
+                <label for="aadhaar-front">Aadhaar Card Front:</label>
+                <input type="file" id="aadhaar-front" name="aadhaar-front" accept=".jpg, .jpeg, .png, .pdf">
+            </div>
+            <div class="input-group">
+                <label for="aadhaar-back">Aadhaar Card Back:</label>
+                <input type="file" id="aadhaar-back" name="aadhaar-back" accept=".jpg, .jpeg, .png, .pdf">
+            </div>
+            <div class="input-group">
+                <label for="pan-card">PAN Card:</label>
+                <input type="file" id="pan-card" name="pan-card" accept=".jpg, .jpeg, .png, .pdf">
+            </div>
+            <div class="input-group">
+                <label for="cancelled-cheque">Cancelled Cheque:</label>
+                <input type="file" id="cancelled-cheque" name="cancelled-cheque" accept=".jpg, .jpeg, .png, .pdf">
+            </div>
+            <div class="input-group">
+                <label for="demat-pdf">Demat PDF Photo:</label>
+                <input type="file" id="demat-pdf" name="demat-pdf" accept=".pdf">
+            </div>
+            <div class="input-group">
+                <label for="profile-pic">Profile Picture:</label>
+                <input type="file" id="profile-pic" name="profile-pic" accept=".jpg, .jpeg, .png">
+            </div>
+            <button type="submit" class="btn">Upload Documents</button>
+        </form>
+    </div>
+
+
+    <!-- Other Tab Content Goes Here -->
+
+    <script>
+        function openTab(tabName) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.style.display = 'none');
+            document.getElementById(tabName).style.display = 'block';
+        }
+
+        function updateProfile() {
+            // Add your code to handle profile updates here
+            alert('Profile updated successfully!');
+        }
+
+        // Show the "My Profile" tab by default
+        openTab('profile');
+    </script>
+</body>
+
+</html>
