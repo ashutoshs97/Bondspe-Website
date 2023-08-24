@@ -1,0 +1,75 @@
+/* Reset default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply background color and font family */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Style the header */
+h1 {
+    background-color: #101010;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Style the bond list */
+.bond-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Style the bond cards */
+.bond-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect for bond cards */
+.bond-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Style bond details and invest button */
+.bond-card h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.bond-card p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.invest-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #101010;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+/* Hover effect for invest button */
+.invest-button:hover {
+    background-color: #101010;
+}
