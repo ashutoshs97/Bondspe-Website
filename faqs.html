@@ -4,98 +4,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
-    <title>FAQ - PennyUpp</title>
+    <title>FAQs - BondsPe</title>
     <style>
+        /* Basic styling */
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
         }
 
-        .header {
-            background-color: #101010;
-            color: white;
+        header {
             text-align: center;
-            padding: 1em 0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
+            background-color: #101010;
+            color: #fff;
+            padding: 20px;
         }
 
-        .header:hover {
-            transform: translateY(-3px);
+        header h1 {
+            margin: 0;
         }
 
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2em;
-            background-color: white;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
-            margin-top: 20px;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        h2 {
+            color: #101010;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        /* Animation and hover effects */
+        header h1:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
         }
 
         .container:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
         }
 
-        .content {
-            line-height: 1.6;
-            opacity: 0.9;
-            transition: opacity 0.3s ease-in-out;
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            header {
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
         }
 
-        .content:hover {
-            opacity: 1;
+        /* FAQ Styling */
+        .faq {
+            margin-bottom: 20px;
         }
 
         .question {
             font-weight: bold;
-            margin-top: 1.5em;
+            cursor: pointer;
         }
 
         .answer {
-            margin-top: 0.5em;
+            display: none;
+            margin-top: 10px;
+        }
+
+        .question:hover {
+            text-decoration: underline;
+        }
+
+        .question.active {
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
-    <div class="header">
-        <h1>Frequently Asked Questions</h1>
-    </div>
+    <header>
+        <h1>FAQs - BondsPe</h1>
+    </header>
+
     <div class="container">
-        <div class="content">
-            <div class="question">Q: What is PennyUpp?</div>
-            <div class="answer">A: PennyUpp is a mutual funds app that rounds up your day-to-day transactions and
-                invests the spare change in mutual funds to help you save and invest effortlessly.</div>
-
-            <div class="question">Q: How does round-up work?</div>
-            <div class="answer">A: When you make a transaction, PennyUpp rounds up the amount to the nearest dollar and
-                invests the spare change.</div>
-
-            <div class="question">Q: Are my investments safe?</div>
-            <div class="answer">A: Your investments are subject to market risks. We work with reputable fund managers,
-                but it's important to remember that all investments carry some level of risk.</div>
-
-            <div class="question">Q: Can I withdraw my investments?</div>
-            <div class="answer">A: Yes, you can withdraw your investments at any time. However, keep in mind that mutual
-                funds might have redemption fees or specific withdrawal periods.</div>
-
-            <div class="question">Q: How do daily and weekly deposits work?</div>
-            <div class="answer">A: You can set up daily or weekly deposits to invest a fixed amount regularly. This
-                helps you build your investment over time.</div>
-
-            <div class="question">Q: Can I change my investment preferences?</div>
-            <div class="answer">A: Yes, you can adjust your round-up settings, deposit preferences, and investment
-                portfolios in the PennyUpp app.</div>
+        <div class="faq">
+            <div class="question">What is BondsPe?</div>
+            <div class="answer">
+                BondsPe is a bonds investment app that allows you to invest in a variety of bonds, manage your
+                portfolio, and track your investments.
+            </div>
         </div>
+
+        <div class="faq">
+            <div class="question">How do I get started?</div>
+            <div class="answer">
+                To get started with BondsPe, you need to create an account, complete the KYC process, and deposit funds
+                into your account. Once your account is funded, you can start investing in bonds.
+            </div>
+        </div>
+        
+        <div class="faq">
+            <div class="question">What is BondsPe?</div>
+            <div class="answer">
+                BondsPe is a bonds investment app that allows you to invest in a variety of bonds, manage your
+                portfolio, and track your investments.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">How do I get started?</div>
+            <div class="answer">
+                To get started with BondsPe, you need to create an account, complete the KYC process, and deposit funds
+                into your account. Once your account is funded, you can start investing in bonds.
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">What is BondsPe?</div>
+            <div class="answer">
+                BondsPe is a bonds investment app that allows you to invest in a variety of bonds, manage your
+                portfolio, and track your investments.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">How do I get started?</div>
+            <div class="answer">
+                To get started with BondsPe, you need to create an account, complete the KYC process, and deposit funds
+                into your account. Once your account is funded, you can start investing in bonds.
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">What is BondsPe?</div>
+            <div class="answer">
+                BondsPe is a bonds investment app that allows you to invest in a variety of bonds, manage your
+                portfolio, and track your investments.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">How do I get started?</div>
+            <div class="answer">
+                To get started with BondsPe, you need to create an account, complete the KYC process, and deposit funds
+                into your account. Once your account is funded, you can start investing in bonds.
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">What is BondsPe?</div>
+            <div class="answer">
+                BondsPe is a bonds investment app that allows you to invest in a variety of bonds, manage your
+                portfolio, and track your investments.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">How do I get started?</div>
+            <div class="answer">
+                To get started with BondsPe, you need to create an account, complete the KYC process, and deposit funds
+                into your account. Once your account is funded, you can start investing in bonds.
+            </div>
+        </div>
+        < class="faq">
+            <div class="question">What is BondsPe?</div>
+            <div class="answer">
+                BondsPe is a bonds investment app that allows you to invest in a variety of bonds, manage your
+                portfolio, and track your investments.
+            </div>
+        101010
+        <!-- Add more FAQs as needed -->
     </div>
+
+    <footer>
+        <p>Last Updated: August 24, 2023</p>
+    </footer>
+
+    <!-- JavaScript to toggle FAQ answers -->
+    <script>
+        const questions = document.querySelectorAll('.question');
+
+        questions.forEach((question) => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('active');
+                const answer = question.nextElementSibling;
+                if (question.classList.contains('active')) {
+                    answer.style.display = 'block';
+                } else {
+                    answer.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
